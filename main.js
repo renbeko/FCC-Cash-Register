@@ -7,10 +7,10 @@ function checkCashRegister(price, cash, cid) {
     }
     if(change > cidTotal)
     {
-        return {status: "INSUFFICIENT_FUNDS", change: []}
+        return {status: "INSUFFICIENT_FUNDS", change: []};
     } else if (change === cidTotal)
     {
-        return {status: "CLOSED", change: cid}
+        return {status: "CLOSED", change: cid};
     } else 
     {
         cid = cid.reverse();
@@ -49,7 +49,7 @@ function checkCashRegister(price, cash, cid) {
         {
             return {status: "INSUFFICIENT_FUNDS", change: []};
         }
-        return {status: "OPEN", change: answer}
+        return {status: "OPEN", change: answer};
     }
   }
   
